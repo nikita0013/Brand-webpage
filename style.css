@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'TitlingGothicFBWide';
+    src: url('./fonts/TitlingGothicFBWide-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Tablet Gothic W02';
+    src: url('TabletGothicW02-Regular.woff2') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Tinos", serif; */
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(229, 224, 224);
+    /* padding: 5%; */
+    /* background-size: contain; */
+}
+.navigation-bar{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 10vh;
+    padding: 2%;
+    /* transform: translateY(20px); */
+animation-name:mynav;
+animation-duration: 0.5s;
+animation-delay: 5.5s;
+animation-timing-function: cubic-bezier(0.69, 0.15, 0.27, 0.75);
+animation-fill-mode: both;
+}
+
+
+@keyframes mynav {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.navigation-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* margin-right: 2%; */
+}
+.navigation-items{
+list-style-type: none;
+
+}
+
+.navigation-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+    letter-spacing:3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+.navigation-items span{
+    color: rgb(217, 63, 7);
+    font-size: 0.7rem;
+    letter-spacing:3px;
+    text-transform: uppercase;
+    margin-right: 100px;
+    font-weight: bold;
+    font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+.navigation-items-img{
+    width: 5%;
+    height: 3vh;
+    position: absolute;
+    margin-top: -1.2%;
+    left: 91%;
+} 
+
+.container-heading{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(151, 149, 149);
+    /* margin-top: 1%; */
+    margin-left: 2.5%;
+    /* letter-spacing: 2px; */
+    /* line-height: 20px; */
+    font-family: 'TitlingGothicFBWide', Arial, sans-serif;
+    animation-name: myheading;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
+    animation-timing-function:linear;
+    animation-fill-mode: both;
+}
+
+
+@keyframes myheading {
+    0%{
+        opacity: 0;
+        transform: translatex(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+.brand-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: rgb(217, 63, 7);
+    letter-spacing: 2em;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    margin: auto;
+    font-family: 'TitlingGothicFBWide', Arial, sans-serif;
+    /* animation-name: mybrand;
+    animation-duration: 4s;*/
+    /* animation-delay: 5s; */
+    /* animation-timing-function: linear; */ 
+    
+    /* animation: mybrand 4s cubic-bezier(0.69, 0.15, 0.27, 0.75) forwards; */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* transform: translateY(20px); */
+animation-name:mybrand;
+animation-duration: 1s;
+animation-delay: 0ms;
+animation-timing-function: cubic-bezier(0.69, 0.15, 0.27, 0.75);
+animation-fill-mode: forwards;
+}
+
+
+@keyframes mybrand {
+    0%{
+        opacity: 0;
+        transform: translatex(30px);
+        filter: blur(400px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+.play-video-container{
+    position: absolute;
+    left: 15%;
+top: 44%;
+/* transform: translateY(10px); */
+animation-name:myvideo;
+animation-duration: 0.5s;
+animation-delay:2.5s;
+animation-timing-function:linear;
+animation-fill-mode: both;
+font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+.videoicon{
+    width: 20%;
+    height: 3vh;
+}
+
+.play-video{
+    color: rgb(217, 63, 7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    /* margin-left: 0.5%; */
+    font-family: 'Tablet Gothic W02', sans-serif;
+    
+}
+@keyframes myvideo {
+    0%{
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+.play-video-about{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+/* font-weight: normal; */
+font-size: 0.8rem;
+margin-top: 5px;
+font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+.marketing-heading{
+/* position: relative;
+top: 35%;
+left: 10%; */
+/* transform: translateY(20px); */
+margin-top: 15%;
+margin-left: 10%;
+font-family: 'TitlingGothicFBWide', Arial, sans-serif;
+animation-name:mymark;
+animation-duration:0.5s;
+animation-delay: 3.2s;
+animation-timing-function:linear;
+animation-fill-mode: both;
+}
+
+
+@keyframes mymark {
+    0%{
+        opacity: 0;
+        transform: translatex(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+
+.marketing-heading-h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-weight: 900;
+}
+
+.content{
+/* transform: translateY(20px); */
+margin-left: 14.5%;
+margin-top: 2%;
+font-family: 'TitlingGothicFBWide', Arial, sans-serif;
+animation-name:mycontent;
+animation-duration: 0.5s;
+animation-delay: 4s;
+animation-timing-function:linear;
+animation-fill-mode: both;
+}
+
+
+@keyframes mycontent {
+    0%{
+        opacity: 0;
+        transform: translatex(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.content-heading{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.writing-mode{
+writing-mode: vertical-lr;
+rotate: 180deg;
+/* position: relative; */
+/* margin-left: 2.5%;
+margin-top: 12%; */
+margin-left: 3%;
+margin-top: -3%;
+}
+
+.writing-vertical{
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    /* font-weight: normal; */
+    letter-spacing: 1px;
+}
+
+.writing-vertical a{
+text-decoration: none;
+color: black;
+font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+.text-container{
+/* margin-left: 15%;
+margin-top: 7%; */
+/* transform: translateY(10px); */
+margin-top: -3%;
+margin-left: 14.5%;
+font-family: 'TitlingGothicFBWide', Arial, sans-serif;
+animation-name:mymode;
+animation-duration: 0.5s;
+animation-delay: 4.9s;
+animation-timing-function:linear;
+animation-fill-mode: both;
+}
+
+
+@keyframes mymode {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.text1{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text2{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(119, 118, 118);
+}
+
+.text3{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(205, 204, 204);
+}
+
+.subscribe{
+position: relative;
+left: 82%;
+top: -10%;
+}
+
+.text-line{
+    border: 1px solid rgb(217, 63, 7);
+    width: 14%;
+    margin-top: 5px;
+}
+.subscribe-anchor{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: rgb(217, 63, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    font-family: 'Tablet Gothic W02', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.main-image-wrapper {
+    width: 550px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    animation: unfold 0.6s ease-out forwards 1.8s;
+  }
+
+  .main-image {
+    background-image: url(https://uploads-ssl.webflow.com/5c2e95d3f539dc3c78c6c3ea/5c300a137569f51deafb015d_image.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  } 
+
+  @keyframes unfold {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+
+
+
